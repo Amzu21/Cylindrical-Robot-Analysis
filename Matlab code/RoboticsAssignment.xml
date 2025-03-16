@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/05/25||18:58:41" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="RoboticsProject" uid="RoboticsProject" version="1558">
+<AssemblyFile name="RoboticsProject.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Body1-1" uid="Body1-1" entityUid="Body1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Body3-2" uid="Body3-2" grounded="true" entityUid="Body3*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Body2-2" uid="Body2-2" entityUid="Body2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 -0.018348226025532405 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Body4-1" uid="Body4-1" entityUid="Body4*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 -0.018348226025532606 -0.050771955410576858</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body1-1</Uid>
+</InstancePath>
+<Position>0 0.010000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>RoboticsProject</Uid>
+</InstancePath>
+<Position>0 0.01 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="LimitDistance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>0 0.070000000000000007 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body1-1</Uid>
+</InstancePath>
+<Position>0.029999999999999995 0.060000000000000005 -0.01</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident36">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>0.014000000000000012 0.061499999999999999 -0.019999999999999997</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body4-1</Uid>
+</InstancePath>
+<Position>0.014000000000000012 0.061499999999999999 0.070000000000000007</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident37">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>0.014000000000000012 0.061499999999999999 -0.019999999999999997</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body4-1</Uid>
+</InstancePath>
+<Position>0.014000000000000012 0.068500000000000005 0.070000000000000007</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident38">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>0.021000000000000012 0.061499999999999999 -0.019999999999999997</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body4-1</Uid>
+</InstancePath>
+<Position>0.021000000000000012 0.068500000000000005 0.070000000000000007</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident39">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>0.014000000000000012 0.068500000000000005 -0.019999999999999997</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body4-1</Uid>
+</InstancePath>
+<Position>0.014000000000000012 0.068500000000000005 0.070000000000000007</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="LimitDistance10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body4-1</Uid>
+</InstancePath>
+<Position>0 0 0.070000000000000007</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>-0.015000000000000003 0.070000000000000007 0.01</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Body1-1</Uid>
+</InstancePath>
+<Position>0 0.060000000000000005 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>0 0.070000000000000007 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Parallel name="Parallel8">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Body1-1</Uid>
+</InstancePath>
+<Position>0 0.060000000000000005 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body2-2</Uid>
+</InstancePath>
+<Position>-0.015000000000000003 0.070000000000000007 0.01</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Parallel>
+</Constraints>
+<Frames>
+</Frames>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Body1" uid="Body1*:*Default" version="113">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Body1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0039269908169872417</Mass>
+<CenterOfMass>0 0.035000000000000003 0</CenterOfMass>
+<Inertia>8.4266677947851218e-07 4.9087385212340421e-08 8.4266677947851208e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Body1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="Body2" uid="Body2*:*Default" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Body2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0072028717508012948</Mass>
+<CenterOfMass>0.0069902674574760645 0.065000000000000016 0</CenterOfMass>
+<Inertia>3.2620888814959623e-07 1.6256199473019175e-06 1.4277889216656758e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Body2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="Body3" uid="Body3*:*Default" version="108">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Body3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.029999999999999992</Mass>
+<CenterOfMass>0 0.0050000000000000001 0</CenterOfMass>
+<Inertia>2.4999999999999994e-06 2.7249999999999981e-05 2.524999999999998e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Body3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="Body4" uid="Body4*:*Default" version="108">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Body4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0031224352447854404</Mass>
+<CenterOfMass>0.017500000000000012 0.065000000000000002 0.042140367779469119</CenterOfMass>
+<Inertia>1.1290406744552201e-06 1.1280418596065225e-06 2.6325425431571647e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Body4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
